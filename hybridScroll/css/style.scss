@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    height: auto;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 50px 0 100px;
+}
+
+.text {
+    margin-bottom: 10px;
+}
+
+.scroll {
+    &__container {
+        height: 500vh;
+    }
+
+    &__title {
+        font-size: 60px;
+        font-weight: bold;
+        margin: 50px 0 100px;
+    }
+
+    &__wrap {
+        height: 100%;
+        overflow: hidden;
+        position: sticky;
+        top: 0;
+
+    }
+
+    &__horizontal {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 580vh;
+        //transformを使って変更するっていうのを事前に伝えているらしい
+        will-change: transform;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        color: #fff;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    &__Item {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: red;
+
+        &:nth-child(even) {
+            background-color: blue;
+        }
+    }
+}

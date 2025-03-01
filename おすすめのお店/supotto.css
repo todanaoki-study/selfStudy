@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/* 全体の背景の装飾 */
+body {
+    background-color: #FAFAFA;
+}
+
+/* 見出しの装飾 */
+h1 {
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    text-align: center;
+    border-bottom: solid;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* 見出し２の装飾 */
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* 画像に影を追加 */
+img {
+    box-shadow: 5px 5px 10px -5px;
+}
+
+/* 3つの画像の装飾 */
+.font {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/* ２つ目の画像に余白を追加 */
+li:nth-child(2) {
+    margin: 0 15px;
+}
+
+/* 段落の基本装飾 */
+p {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-weight: normal;
+}
+
+/* 備考の装飾 */
+.remarks {
+    margin-top: 70px;
+    font-size: 10px;
+}

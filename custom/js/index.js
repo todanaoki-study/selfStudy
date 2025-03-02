@@ -18,13 +18,13 @@ const fetchData = async () => {
 
 // html作成
 const renderPosts = (posts) => {
-    posts.forEach((item) => {
+    posts.forEach((item, index) => {
         const cardHTML = `
-        <div class="articles__list">
-            <img class="articles__item" src="${item.img.url}" alt="記事画像1">
-        </div>
+            <img class="articles__item" src="${item.img.url}" alt="記事画像">
+            <a href="${item.links.twitter}">リンク</a>
         `;
-        document.querySelector(".articles").insertAdjacentHTML("beforeend", cardHTML);
+        console.log(item.links);
+        document.querySelector(".articles__list").insertAdjacentHTML("beforeend", cardHTML);
     });
 };
 

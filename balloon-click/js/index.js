@@ -37,11 +37,34 @@ const deleteImg = (index) => {
     balloon[index].remove();
 }
 
-const balloon = document.querySelectorAll(".balloon__module img");
+//タイトル落下
+const fallingDown = (count) => {
+    const falling = count * 10;
+    if (count < balloonList.length) {
+        gsap.to(container, {
+            y: falling,
+        });
+    }
+    else if (count >= balloonList.length) {
+        gsap.to(container, {
+            y: 1000,
+            autoAlpha: 0,
+        })
+    }
+    console.log(falling);
+}
+//?--------------------------------------
 
+const balloon = document.querySelectorAll(".balloon__module img");
+const container = document.querySelector(".balloon");
+let clickCounter = 0;
+
+//風船をクリック
 for (let i = 0; i < balloonList.length; i++) {
     balloon[i].addEventListener("click", () => {
         changeImg(i);
         soundPlay();
+        clickCounter++;
+        fallingDown(clickCounter);
     });
 }

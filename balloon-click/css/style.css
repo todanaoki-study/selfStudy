@@ -1,8 +1,4 @@
 .balloon {
-  position: relative;
-}
-
-.balloon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -25,5 +21,10 @@
   display: block;
   width: 100px;
   height: 100px;
+}
+.balloon__title {
+  font-size: 45px;
+  text-align: center;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,10 +1,6 @@
 @charset "utf-8";
 
 .balloon {
-    position: relative;
-}
-
-.balloon {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -31,5 +27,11 @@
         display: block;
         width: 100px;
         height: 100px;
+    }
+
+    &__title {
+        font-size: 45px;
+        text-align: center;
+        font-weight: bold;
     }
 }

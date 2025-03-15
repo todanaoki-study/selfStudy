@@ -1,2 +1,2 @@
-.balloon{position:relative}.balloon{position:absolute;top:50%;left:50%;width:300px;height:300px;transform:translate(-50%, -50%)}.balloon__module{position:relative;left:0}.balloon__module:nth-child(2){left:70px}.balloon__module:nth-child(3){top:-250px;left:100px}.balloon__ball{display:block;width:100px;height:100px}
+.balloon{position:absolute;top:50%;left:50%;width:300px;height:300px;transform:translate(-50%, -50%)}.balloon__module{position:relative;left:0}.balloon__module:nth-child(2){left:70px}.balloon__module:nth-child(3){top:-250px;left:100px}.balloon__ball{display:block;width:100px;height:100px}.balloon__title{font-size:45px;text-align:center;font-weight:bold}
 /*# sourceMappingURL=style.min.css.map */

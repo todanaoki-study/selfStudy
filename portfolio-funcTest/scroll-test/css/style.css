@@ -19,6 +19,9 @@ img {
   height: 100vh;
 }
 .works__container {
-  height: 200vh;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

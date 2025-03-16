@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+body {}
+
 img {
     max-width: 100%;
     height: auto;
@@ -23,6 +25,20 @@ img {
     height: 100vh;
 
     &__container {
-        height: 200vh;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
     }
+
+    &__post {}
 }
+
+
+// .scrollStop {
+//     overflow-y: hidden;
+// }
+
+// .scrollStart {
+//     overflow-y: auto;
+// }

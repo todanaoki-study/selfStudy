@@ -47,7 +47,7 @@ const fallingDown = (count) => {
     }
     else if (count >= balloonList.length) {
         gsap.to(container, {
-            y: 1000,
+            y: 300,
             autoAlpha: 0,
         })
     }

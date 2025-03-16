@@ -1,0 +1,24 @@
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.firstView {
+  height: 100vh;
+}
+.firstView__title {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50vh;
+}
+
+.works {
+  background: linear-gradient(#93FFFF, #DBFFFF);
+  height: 100vh;
+}
+.works__container {
+  height: 200vh;
+}
+/*# sourceMappingURL=style.css.map */

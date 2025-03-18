@@ -20,23 +20,24 @@ img {
     }
 }
 
-.works {
-    position: relative;
+.scroll_container {
+    height: 400vh;
+}
 
-    &__bg {
-        font-size: 200px;
-        display: block;
-        height: 100vh;
-        background: linear-gradient(#93FFFF, #DBFFFF);
-        position: sticky;
-        top: 0;
-        left: 0;
+.sticky_wrap {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
 
-        z-index: -1;
-    }
-
-    &__container {
-        margin-top: -100vh;
-
-    }
+.horizontal_scroll {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 400vw;
+    will-change: transform;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

@@ -14,21 +14,26 @@ img {
   padding-top: 50vh;
 }
 
-.works {
-  position: relative;
+.scroll_container {
+  height: 400vh;
 }
-.works__bg {
-  font-size: 200px;
-  display: block;
-  height: 100vh;
-  background: linear-gradient(#93FFFF, #DBFFFF);
+
+.sticky_wrap {
+  overflow: hidden;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  left: 0;
-  z-index: -1;
+  height: 100vh;
 }
-.works__container {
-  margin-top: -100vh;
+
+.horizontal_scroll {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 400vw;
+  will-change: transform;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

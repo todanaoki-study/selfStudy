@@ -1,20 +1,17 @@
-//*関数定義
-function transform(container) {
-    const offsetTop = container.parentElement.offsetTop;
-    const scrollItem = container.querySelector('.scroll__horizontal')
-    //おそらくwindowのtopから要素のtopの間が何％開いているか調べている。
-    //くっついている時は0%
-    let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100;
-    console.log(percentage + "%");
+const wrap = document.querySelector(".scroll__wrap");
+const horizontal = document.querySelector(".scroll__horizontal");
 
-    percentage = percentage < 0 ? 0 : percentage > 300 ? 300 : percentage;
-    scrollItem.style.transform = `translate3d(${-(percentage)}vw, 0, 0)`
-}
+//スクロールイベント
+document.addEventListener("scroll", () => {
+    //offsetで要素の座標を記録
+    const parentPos = wrap.parentElement.offsetTop;
+    //コンテナが画面のどの位置にあるかを計算(0以上で画面内)
+    const percentage = ((window.scrollY - parentPos) / window.innerHeight) * 100;
+    console.log(Math.floor(percentage) + "%");
 
-const wrap = document.querySelectorAll(".scroll__wrap");
-
-window.addEventListener("scroll", (e) => {
-    for (let i = 0; i < wrap.length; i++) {
-        transform(wrap[i]);
+    //要素の幅を超えないように制限
+    if (percentage > 0 || percentage < 400) {
+        //その間横に変換
+        horizontal.style.transform = `translateX(${-(percentage)}vw)`;
     }
-})
+});

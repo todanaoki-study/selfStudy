@@ -30,22 +30,20 @@
                 <p class="main__text">ここにコンテンツが入ります。</p>
             </div>
 
-            <!-- ブログ記事セクション -->
+            <!-- ブログ記事セクション cmsで追加-->
             <section class="blog">
                 <h2 class="blog__subtitle">ブログ記事</h2>
-                <article class="blog__post post">
-                    <img src="path/to/image.jpg" alt="記事の画像" class="post__image">
-                    <h3 class="post__title">ブログ記事のタイトル</h3>
-                    <p class="post__author">著者: 山田太郎</p>
-                    <p class="post__date">公開日: 2025年3月23日</p>
-                    <div class="post__content">
-                        <p>ここにブログ記事の本文が入ります。</p>
-                    </div>
-                    <ul class="post__tags">
-                        <li class="post__tag">タグ1</li>
-                        <li class="post__tag">タグ2</li>
-                    </ul>
-                </article>
+                <div class="blog__container">
+                    <article class="blog__post post">
+                        <img src="path/to/image.jpg" alt="記事の画像" class="post__image">
+                        <h3 class="post__title">ブログ記事のタイトル</h3>
+                        <p class="post__author">著者: 山田太郎</p>
+                        <p class="post__date">公開日: 2025年3月23日</p>
+                        <div class="post__content">
+                            <p>ここにブログ記事の本文が入ります。</p>
+                        </div>
+                    </article>
+                </div>
             </section>
 
             <!-- aboutセクション -->
@@ -61,6 +59,8 @@
             <p class="footer__text">© 2025 MicroCMS テストページ</p>
         </div>
     </footer>
+
+    <script defer src="js/index.js"></script>
 </body>
 
 </html>

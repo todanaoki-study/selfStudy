@@ -86,12 +86,19 @@ body {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
+.blog__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 .blog__post {
   background-color: #fff;
   padding: 1rem;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 1rem;
+  width: 30%;
 }
 .blog__post .post__image {
   max-width: 100%;
@@ -112,19 +119,6 @@ body {
 .blog__post .post__content {
   font-size: 1rem;
   margin-bottom: 1rem;
-}
-.blog__post .post__tags {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-}
-.blog__post .post__tags .post__tag {
-  background-color: #eee;
-  color: #333;
-  padding: 0.25rem 0.5rem;
-  border-radius: 3px;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 /* Aboutセクション */

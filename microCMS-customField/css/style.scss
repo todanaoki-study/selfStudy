@@ -1,3 +1,10 @@
+@mixin mix-flex($a: center, $j: space-between) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $j;
+    align-items: $a;
+}
+
 /* リセット */
 * {
     margin: 0;
@@ -97,14 +104,20 @@ body {
         margin-bottom: 1rem;
     }
 
+    &__container {
+        @include mix-flex();
+    }
+
     &__post {
         background-color: #fff;
         padding: 1rem;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         margin-bottom: 1rem;
+        width: 30%;
 
         .post__image {
+
             max-width: 100%;
             height: auto;
             border-radius: 5px;
@@ -128,20 +141,7 @@ body {
             margin-bottom: 1rem;
         }
 
-        .post__tags {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
 
-            .post__tag {
-                background-color: #eee;
-                color: #333;
-                padding: 0.25rem 0.5rem;
-                border-radius: 3px;
-                margin-right: 0.5rem;
-                margin-bottom: 0.5rem;
-            }
-        }
     }
 }
 

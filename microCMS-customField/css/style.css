@@ -92,33 +92,51 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.blog__post {
+
+.post {
   background-color: #fff;
   padding: 1rem;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 1rem;
-  width: 30%;
+  width: 45%;
 }
-.blog__post .post__image {
+.post__image {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
   margin-bottom: 1rem;
 }
-.blog__post .post__title {
+.post__title {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
 }
-.blog__post .post__author,
-.blog__post .post__date {
+.post__author, .post__date {
   font-size: 0.875rem;
   color: #777;
   margin-bottom: 0.5rem;
 }
-.blog__post .post__content {
+.post__content {
   font-size: 1rem;
   margin-bottom: 1rem;
+}
+.post__sns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-items: center;
+}
+.post__snsTitle {
+  margin-right: 20px;
+  width: 100px;
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+.post__snsLink {
+  color: #0808F1;
+  font-style: italic;
+  font-size: 12px;
 }
 
 /* Aboutセクション */

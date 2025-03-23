@@ -107,41 +107,55 @@ body {
     &__container {
         @include mix-flex();
     }
+}
 
-    &__post {
-        background-color: #fff;
-        padding: 1rem;
+.post {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    width: 45%;
+
+    &__image {
+        max-width: 100%;
+        height: auto;
         border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         margin-bottom: 1rem;
-        width: 30%;
+    }
 
-        .post__image {
+    &__title {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
 
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            margin-bottom: 1rem;
-        }
+    &__author,
+    &__date {
+        font-size: 0.875rem;
+        color: #777;
+        margin-bottom: 0.5rem;
+    }
 
-        .post__title {
-            font-size: 1.25rem;
-            margin-bottom: 0.5rem;
-        }
+    &__content {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
 
-        .post__author,
-        .post__date {
-            font-size: 0.875rem;
-            color: #777;
-            margin-bottom: 0.5rem;
-        }
+    &__sns {
+        @include mix-flex(flex-start, flex-start);
+        align-items: center;
+    }
 
-        .post__content {
-            font-size: 1rem;
-            margin-bottom: 1rem;
-        }
+    &__snsTitle {
+        margin-right: 20px;
+        width: 100px;
+        text-align-last: left;
+    }
 
-
+    &__snsLink {
+        color: #0808F1;
+        font-style: italic;
+        font-size: 12px;
     }
 }
 

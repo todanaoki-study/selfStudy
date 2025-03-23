@@ -5,43 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MicroCMS テストページ</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-
     <header class="header">
-        <h1 class="header__title">MicroCMS テストページ</h1>
+        <div class="header__inner">
+            <div class="header__logo">ロゴ</div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">ホーム</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">サービス</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="main">
-        <section class="articles">
-            <h2 class="articles__title">記事</h2>
-            <div class="articles__list">
-                <img class="articles__item" src="https://placehold.jp/300x200.png" alt="記事画像1">
-                <img class="articles__item" src="https://placehold.jp/300x200.png" alt="記事画像2">
-                <img class="articles__item" src="https://placehold.jp/300x200.png" alt="記事画像3">
-                <img class="articles__item" src="https://placehold.jp/300x200.png" alt="記事画像4">
-                <img class="articles__item" src="https://placehold.jp/300x200.png" alt="記事画像5">
-                <img class="articles__item" src="https://placehold.jp/300x200.png" alt="記事画像6">
+        <div class="main__inner">
+            <div class="main__section">
+                <h1 class="main__title">ようこそ</h1>
+                <p class="main__text">ここにコンテンツが入ります。</p>
             </div>
-        </section>
 
-        <section class="map">
-            <h2 class="map__title">マップ</h2>
-            <div class="map__container">
-                <iframe class="map__iframe" src="https://maps.google.com/maps?q=東京駅&z=15&output=embed" width="100%"
-                    height="300" frameborder="0"></iframe>
-            </div>
-        </section>
+            <!-- ブログ記事セクション -->
+            <section class="blog">
+                <h2 class="blog__subtitle">ブログ記事</h2>
+                <article class="blog__post post">
+                    <img src="path/to/image.jpg" alt="記事の画像" class="post__image">
+                    <h3 class="post__title">ブログ記事のタイトル</h3>
+                    <p class="post__author">著者: 山田太郎</p>
+                    <p class="post__date">公開日: 2025年3月23日</p>
+                    <div class="post__content">
+                        <p>ここにブログ記事の本文が入ります。</p>
+                    </div>
+                    <ul class="post__tags">
+                        <li class="post__tag">タグ1</li>
+                        <li class="post__tag">タグ2</li>
+                    </ul>
+                </article>
+            </section>
+
+            <!-- aboutセクション -->
+            <section class="about">
+                <h2 class="about__title">私たちについて</h2>
+                <p class="about__text">私たちは、最高のサービスを提供することを目指しています。</p>
+            </section>
+        </div>
     </main>
 
     <footer class="footer">
-        <p class="footer__text">&copy; 2025 MicroCMS Test</p>
+        <div class="footer__inner">
+            <p class="footer__text">© 2025 MicroCMS テストページ</p>
+        </div>
     </footer>
-
-    <script defer src="js/index.js"></script>
-
 </body>
 
 </html>
